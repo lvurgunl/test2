@@ -19,7 +19,23 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Inter', sans-serif; overflow-x: hidden; padding-bottom: env(safe-area-inset-bottom); }
+<audio id="bg-music" loop>
+        <source src="nunslt.mp3" type="audio/mpeg">
+        Tarayıcınız ses etiketini desteklemiyor.
+    </audio>
 
+    ```
+
+**B. Müzik Kontrol Butonu (Footer veya body kapanmadan önce):**
+
+`index.html` dosyasının en altına, `</body>` kapanış etiketinden hemen önce, eğer daha önce eklemediyseniz bu butonu ekleyin:
+
+```html
+    <div class="music-fab" onclick="toggleMusic()">
+        <i class="fas fa-music"></i>
+    </div>
+
+    <script src="script.js"></script>
         /* --- ŞİFRE EKRANI --- */
         #password-screen {
             position: fixed;
@@ -275,5 +291,6 @@
     </script>
 </body>
 </html>
+
 
 
